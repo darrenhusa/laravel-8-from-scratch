@@ -25,6 +25,8 @@ class RegisterController extends Controller
         // dd('got here');
 
         User::create($attributes);
+
+        return redirect('/');
     }
     
 }
